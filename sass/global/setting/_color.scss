@@ -1,0 +1,19 @@
+// 背景ベースカラー
+$bg-color: #F5FCF8;
+
+// 背景サブカラー
+// $sub-bg-color: #3BA6C9;
+
+// 文字ベースカラー
+$text-color: #444444;
+
+// 緑文字
+$gr-text: #21A937;
+
+// アンダーライン
+$ul-color: #99E5A5;
+@mixin ul {
+    display: inline-block;
+    background: linear-gradient(transparent 70%, $ul-color 50%);
+}
+// 

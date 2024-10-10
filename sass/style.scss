@@ -1,0 +1,29 @@
+// sassディレクトリ直下のフォルダ
+@charset "UTF-8";
+
+// 変数管理
+@use "global";
+
+// 基本設定
+@use "foundation";
+
+// レイアウト部分
+@use "layout";
+
+// コンポーネント
+@use "component";
+
+// javascriptで動く（ハンバーガーメニューなど）
+@use "javascript";
+
+
+// 各ページのモジュール管理
+@use "page";
+
+// * {
+//     font-weight: bold;
+// }
+
+
+
+

@@ -1,0 +1,17 @@
+// ブレイクポイント---------
+// pcとtbの幅を定義
+$pc: 960px;
+$tb: 768px;
+
+// min-widthを指定
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin tb {
+    @media (min-width: ($tb)) {
+        @content;
+    }
+}

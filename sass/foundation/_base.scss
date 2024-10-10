@@ -1,0 +1,52 @@
+@use "../global/setting/" as gs;
+@use "../global/mixin/" as gm;
+
+
+* {
+    box-sizing: border-box;
+}
+
+// html {
+//     font-size: 62.5%;
+// }
+
+body {
+    font-size: gs.$fz14;
+    // font-size: 1.4rem;
+    font-family: gs.$main-font;
+    color: gs.$text-color;
+    font-weight: 400;
+    // letter-spacing: .04em;
+    line-height: 1.42;
+    // font-feature-settings: "palt";
+
+    @include gm.pc {
+        font-size: gs.$fz16;
+    }
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+    color: gs.$text-color;
+}
+
+
+.pc-only {
+    display: none;
+}
+@include gm.pc {
+    .pc-only {
+        display: block;
+    }
+    .sp-only {
+        display: none;
+    }
+}
+
+
+

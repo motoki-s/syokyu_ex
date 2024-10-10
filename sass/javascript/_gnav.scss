@@ -1,0 +1,50 @@
+// ハンバーガーアイコンコピペする
+
+/* ハンバーガーボタンポジション */
+.zdo_drawer_menu {
+    display: block;
+}
+
+.zdo_drawer_button {
+    position: fixed;
+    top: 30px;
+    right: 34px;
+    z-index: 1001;
+}
+
+/* ハンバーガーメニューインナー */
+.zdo_drawer_nav_wrapper {
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    transition: all 0.2s;
+    transform: translate(320px);
+    z-index: 1000;
+}
+
+.zdo_drawer_nav_wrapper.open {
+    transform: translate(0);
+}
+
+.zdo_drawer_bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.zdo_drawer_nav {
+    padding: 100px 30px;
+}
+
+.drawer_nav_item {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}

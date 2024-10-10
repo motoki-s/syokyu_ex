@@ -1,0 +1,85 @@
+@use "../global/setting/" as gs;
+@use "../global/mixin/" as gm;
+
+header {
+    height: 140px;
+
+    @include gm.pc {
+        height: 130px;
+    }
+
+    .header-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        @include gm.pc {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            width: 148px;
+            margin-bottom: 8px;
+
+            @include gm.pc {
+                width: auto;
+                margin-bottom: 0;
+            }
+        }
+
+
+        .header-right {
+
+            .reception-info {
+                font-size: gs.$fz12;
+                margin-bottom: 7px;
+
+                @include gm.pc {
+                    font-size: gs.$fz14;
+                }
+
+                .sp-only {
+                    @include gm.pc {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 電話
+.tel {
+    display: flex;
+
+    @include gm.pc {
+        justify-content: right;
+    }
+
+    img {
+        width: 16px;
+        margin-right: 5px;
+
+        @include gm.pc {
+            width: 25px;
+        }
+    }
+
+    .tel-no {
+        color: gs.$gr-text;
+        font-weight: bold;
+        font-size: gs.$fz20;
+
+        @include gm.pc {
+            font-size: gs.$fz24;
+            pointer-events: none;
+        }
+    }
+}

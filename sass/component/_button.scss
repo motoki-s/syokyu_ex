@@ -1,0 +1,26 @@
+// @use "../global/setting/" as gs;
+// @use "../global/mixin/" as gm;
+
+// //ボタン
+// .btn {
+//     display: inline-block;
+//     padding: 8px 19px;
+//     color: gs.$btn-text;
+//     font-weight: bold;
+//     background: gs.$btn-color;
+//     border-radius: 20px;
+//     font-size: 1.5rem;
+
+//     @include gm.pc {
+//         font-size: 1.6rem;
+//         padding: 11px 29px;
+//     }
+// }
+
+// //別ボタン
+// .ct-btn {
+//     background: gs.$btn-color2;
+//     padding: 11px 45px;
+//     margin-right: 32px;
+// }
+
